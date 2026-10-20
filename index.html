@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vertical Sailing Tour — Landing Pages</title>
+<meta name="description" content="Vertical Sailing Tour landing pages: shared and private sail & climb weeks across the Mediterranean.">
+<link rel="icon" type="image/png" href="assets/img/logo-orange.png">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  .chooser{min-height:100svh;display:grid;grid-template-rows:auto 1fr;padding:40px 24px}
+  .chooser-logo{display:flex;justify-content:center}
+  .chooser-logo img{height:56px;width:auto}
+  .chooser-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:1100px;width:100%;margin:40px auto;align-content:center}
+  @media(max-width:760px){.chooser-grid{grid-template-columns:1fr}}
+  .choice{position:relative;border-radius:22px;overflow:hidden;min-height:62vh;display:flex;align-items:flex-end;border:1px solid var(--line);transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s}
+  .choice:hover{transform:translateY(-10px);box-shadow:var(--shadow-card)}
+  .choice .bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .8s}
+  .choice:hover .bg{transform:scale(1.06)}
+  .choice .sh{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,18,32,.15) 30%,rgba(10,18,32,.95))}
+  .choice .body{position:relative;z-index:2;padding:34px}
+  .choice h2{color:#fff;font-size:2rem;margin:10px 0 8px}
+  .choice p{color:#cfd6e0;font-size:.95rem;max-width:44ch}
+  .choice .go{display:inline-flex;margin-top:18px}
+</style>
+</head>
+<body>
+<div class="chooser">
+  <div class="chooser-logo"><img src="assets/img/logo-white.png" alt="Vertical Sailing Tour"></div>
+  <div class="chooser-grid">
+    <a class="choice" href="sail-climb-mediterranean/">
+      <div class="bg" style="background-image:url('assets/img/hero-climber-sail.webp')"></div>
+      <div class="sh"></div>
+      <div class="body">
+        <span class="overline">Shared weeks · from €2,290</span>
+        <h2>Sail &amp; Climb Mediterranean</h2>
+        <p>Join a crew of 4-6 climbers. Fixed departures, four destinations, one unforgettable week.</p>
+        <span class="btn btn-primary go">View page <span class="arrow">→</span></span>
+      </div>
+    </a>
+    <a class="choice" href="private-tour-mediterranean/">
+      <div class="bg" style="background-image:url('assets/img/sunset-bay.webp')"></div>
+      <div class="sh"></div>
+      <div class="body">
+        <span class="overline">Private weeks · from €2,656</span>
+        <h2>Private Sail &amp; Climb</h2>
+        <p>The whole boat, built around you. Your group, your dates, your itinerary.</p>
+        <span class="btn btn-primary go">View page <span class="arrow">→</span></span>
+      </div>
+    </a>
+  </div>
+</div>
+</body>
+</html>
